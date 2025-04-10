@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import NavMobile from "./NavMobile";
 
 const Header = () => {
   return (
@@ -10,6 +11,9 @@ const Header = () => {
         >
           MernEst.com
         </Link>
+        <div className="md:hidden">
+          <NavMobile />
+        </div>
       </div>
     </div>
   );
