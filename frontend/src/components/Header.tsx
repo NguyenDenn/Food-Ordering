@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import NavMobile from "./NavMobile";
+import MainNav from "./MainNav";
 
 const Header = () => {
   return (
@@ -13,6 +14,9 @@ const Header = () => {
         </Link>
         <div className="md:hidden">
           <NavMobile />
+        </div>
+        <div className="hidden md:block">
+          <MainNav />
         </div>
       </div>
     </div>
